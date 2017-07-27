@@ -7,7 +7,7 @@
 5.	neural network
 
 ### preparations-environment:
-1.	install CLIENT simulator on a computer running Windows (\share\users\李睿康\智慧交通0727\其高汽车鸣笛仿真器V0.52.rar)
+1.	install CLIENT simulator on a computer running Windows (\share\users\李睿康\智慧交通0727\仿真器V0.52.rar)
 2.	install opencv	(sudo apt-get install libopencv-dev ; http://www.cnblogs.com/dragonyo/p/6754599.html)
 3.	install "libPR.so" and "train XMLs" of senior Tse (\share\users\李睿康\智慧交通0727\PR.tar)
 4.	install caffe [branch ssd;pycaffe] (http://blog.csdn.net/humble_thumber/article/details/54135923)
