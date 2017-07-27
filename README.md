@@ -15,7 +15,7 @@
 6.  install ros (http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
 ### installation:
-1.	git clone https://github.com/liruikangyk/intelligent_traffic.git
+1.	git clone git@10.92.13.175:~/repo/intelligent_traffic.git   (passwd: single space--> " ")
 2.	cd intelligent_traffic
 3.	catkin_make
 
