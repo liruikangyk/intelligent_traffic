@@ -1,5 +1,5 @@
 # intelligent_traffic
-structrue of the project(5 progresses):
+structrue of the project(5 processes):
 1.	image publisher
 2.	plate detector
 3.	main
