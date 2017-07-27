@@ -8,7 +8,10 @@ from lrkmsg.msg import cmd_info, image_info
 import rospy
 from cv_bridge import CvBridge
 import cv2
+import os
 
+basepath=os.path.dirname(__file__)
+print basepath
 port = 6342
 localip = '10.92.13.175'
 
@@ -555,7 +558,7 @@ class imgInfo_subscriber:
         print("realtime:"),
         print(ytime)
         ximage = self.bridge.imgmsg_to_cv2(data.image, "rgb8")
-        filename = "pics/" + str(xtime) + ".jpg"
+        filename = basepath+"/pics/" + str(xtime) + ".jpg"
         cv2.imwrite(filename, ximage)
         mytcpTest.S_sendPic(xtime, 0, 0, filename)
 
