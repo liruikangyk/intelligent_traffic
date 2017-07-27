@@ -19,12 +19,10 @@
 2.	cd intelligent_traffic
 3.	catkin_make
 4.	source devel/setup.bash
-5.	roscore
-6.	rosrun lrkmsg image_publisher
-7.	rosrun lrkmsg plate_detector
-8.	python lrk_detectcar.py
-9.	python lrk_tcpserver.py
-10.	python lrk_main.py
-11.	trigger the whole system with CLIENT on Windows and see if it works(pls make sure that ip/port/firewall settings are correct)
+5.	roslaunch lrkmsg lrk_start_all.launch
+6.	trigger the whole system with CLIENT on Windows and see if it works(pls make sure that ip/port/firewall settings are correct)
+##### you can use "rosrun rqt_graph rqt_graph" to see if all 5 processes started and established the communication 
+##### you can use "rqt" and use plugins-visualization-image_view to see the topics of type "Image"
+##### you can use "rostopic list";"rostopic echo \<topicname>" to see the topics of type "String" 
 
 

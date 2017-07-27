@@ -1,0 +1,12 @@
+<launch>
+	<node pkg="lrkmsg" name="lrk_imgpub" type="image_publisher">
+	</node>
+	<node pkg="lrkmsg" name="lrk_platedetect" type="plate_detector">
+	</node>
+	<node pkg="lrkmsg" name="lrk_server" type="lrk_server.py">
+	</node>
+	<node pkg="lrkmsg" name="lrk_main" type="lrk_main.py">
+	</node>
+	<node pkg="lrkmsg" name="lrk_network" type="lrk_detectcar.py">
+	</node>
+</launch>
