@@ -8,10 +8,15 @@ structrue of the project(5 progresses):
 
 preparations:
 -4:	install CLIENT simulator on a computer running Windows
+
 -3:	install opencv
+
 -2:	install "libPR.so" and "train XMLs" of senior Tse
+
 -1:	install caffe(branch ssd;pycaffe)
+
 0:	install VGGNet of brother Hung-Heoi (copy VGGNet to some folder and change the settings in lrk_detectcar.py)
+
 1.	copy "lrkmsg" folder to ~/catkin_ws/src
 2.	catkin_make
 3.	copy "tcpTest" folder to anywhere you like (do not delete the "pics" folder inside it)
