@@ -13,17 +13,18 @@
 4.	install caffe(branch ssd;pycaffe)
 5.	install VGGNet of brother Hung-Heoi (copy VGGNet to some folder and change the settings in lrk_detectcar.py)
 
-### preparations-project deployment:
-1.	copy "lrkmsg" folder to ~/catkin_ws/src
-2.	catkin_make
-3.	copy "tcpTest" folder to anywhere you like (do not delete the "pics" folder inside it)
-
 ### run:
-1.	connect camera to the computer(default:/dev/video0)
-2.	rosrun lrkmsg image_publisher
-3.	rosrun lrkmsg plate_detector
-###### move to "tcpTest" folder and:
-4.	python lrk_detectcar.py
-5.	python lrk_tcpserver.py
-6.	python lrk_main.py
-7.	trigger the whole system with CLIENT on Windows and see if it works(pls make sure that ip/port/firewall settings are correct)
+##### 0. connect camera to the computer(default:/dev/video0)
+1.	git clone https://github.com/liruikangyk/intelligent_traffic.git
+2.	cd intelligent_traffic
+3.	catkin_make
+4.	source devel/setup.bash
+5.	roscore
+6.	rosrun lrkmsg image_publisher
+7.	rosrun lrkmsg plate_detector
+8.	python lrk_detectcar.py
+9.	python lrk_tcpserver.py
+10.	python lrk_main.py
+11.	trigger the whole system with CLIENT on Windows and see if it works(pls make sure that ip/port/firewall settings are correct)
+
+
