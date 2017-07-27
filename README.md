@@ -21,8 +21,8 @@ preparations-project deployment:
 run:
 1.	connect camera to the computer(default:/dev/video0)
 2.	rosrun lrkmsg image_publisher
-3.	rosrun lrkmsg plate_detector
--move to "tcpTest" folder and:
+3.	rosrun lrkmsg plate_detector  
+move to "tcpTest" folder and:
 4.	python lrk_detectcar.py
 5.	python lrk_tcpserver.py
 6.	python lrk_main.py
