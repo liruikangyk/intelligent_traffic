@@ -7,7 +7,7 @@
 5.	neural network
 6.  daemon_test
 
-### preparations-environmen:
+### preparations-environment:
 1.  "cd ~"
 2.  "git clone git@10.92.13.175:~/intraffic.git"   (passwd: single space--> " ")
 3.	install CLIENT simulator on a computer running Windows (\share\users\李睿康\智慧交通0727\仿真器V0.52.rar)
